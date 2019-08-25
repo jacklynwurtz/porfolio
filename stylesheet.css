@@ -3,14 +3,54 @@ html {
     font-family: Arial, Helvetica, sans-serif;
     height: 100%;
     box-sizing: border-box;
-}
-
-.bg-image {
     background-image: url("samuel-zeller-0rxmzg-Q1Lk-unsplash.jpg");
-    height: 100%;
-    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed
+}
+
+nav {
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/opacity/see-through */
+    border-bottom: 3px solid #f1f1f1;
+    width: 100%;
+    height: 50px;
+    margin: 0;
+    padding: 5 15px;
+    position: fixed;
+    top: 5px;
+}
+
+nav ul {
+    display: flex;
+    margin 0;
+    padding: 0 100px;
+    float: right;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 12px 24px;
+    color: white;
+    font-size: 17px;
+}
+
+.btn:hover {
+    color: black;
 }
 
 .bg-text {
@@ -21,29 +61,57 @@ html {
     color: white;
     font-weight: bold;
     border: 3px solid #f1f1f1;
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
     width: 80%;
+    height: 140px;
+    margin: 75px auto;
+    display: block;
     padding: 20px;
     text-align: center;
 }
 
-.container {
+.bg-text h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+}
+
+.dividers {
     background-color: rgb(0, 0, 0);
     /* Fallback color */
     background-color: rgba(0, 0, 0, 0.4);
     /* Black w/opacity/see-through */
     color: white;
-    font-weight: bold;
+    font-weight: normal;
     border: 3px solid #f1f1f1;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    z-index: 2;
+    width: 10%;
+    height: 40px;
+    margin: 5px auto;
+    display: block;
+    padding: 0 15px;
+    text-align: center;
+    align-self: left;
+}
+
+.dividers p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+}
+
+.content-table {
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/opacity/see-through */
+    color: white;
+    border: 3px solid #f1f1f1;
     width: 80%;
+    height: 140px;
+    margin: 5px auto;
+    display: block;
     padding: 20px;
-    top: 80%;
-    left: 50%;
+    text-align: left;
+}
+
+.content-table p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
 }
